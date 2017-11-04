@@ -1,11 +1,9 @@
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spotify.apollo.Environment;
 import com.spotify.apollo.RequestContext;
 import com.spotify.apollo.Response;
 import com.spotify.apollo.httpservice.HttpService;
 import com.spotify.apollo.httpservice.LoadingException;
 import com.spotify.apollo.route.Route;
-import okio.ByteString;
 
 import java.io.IOException;
 
