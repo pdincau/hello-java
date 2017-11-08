@@ -19,7 +19,7 @@ node {
     stage('UAT') {
         docker.image('pdincau/hello-java').withRun('-p 9999:8080') { c ->
             sh 'sleep 5'
-            sh 'curl -v 127.0.0.1:9999/ping'
+            sh 'curl -v --fail 127.0.0.1:9999/ping'
         }
     }
 
