@@ -24,7 +24,6 @@ node {
     }
 
     stage('Publish Docker Image') {
-        sh "docker push pdincau/hello-java"
         docker.withRegistry('https://registry.hub.docker.com', 'pdincau-credentials') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
